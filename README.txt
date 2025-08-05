@@ -1,0 +1,38 @@
+#### README for NY Doppler Radar Viewer aka Weather_App_NY_2.py ####
+# Retrieve latest precipatation forecast gif from the national weather service website https://radar.weather.gov/ridge/standard/NORTHEAST_loop.gif
+ and display it in a local window on the computer. 
+This application uses the packages listed in requirements.txt for which you should update the venv in program repository with program.
+This is an early version of a PyQt5 desktop app currently limited to Northeast and without extenuating controls or queries of weather data. A starting point
+# Currently the program;
+- Loads the most recent radar loop at runtime
+- Uses PyQt5 for a clean GUI
+- Automatically scales the radar image
+- No local files required — everything runs from memory
+
+Future Plans
+- Add timestamp overlay
+- Refresh button for manual updates
+- Support for other regions
+
+License
+MIT License — feel free to use and modify!
+
+### To get started you must have the following;
+1. Required systems
+- Python 3.7+
+- PyQt5
+- `requests` library
+
+2. Download the raw zip file and place in a location accessible to your preferred python installation.
+
+3. Build the virtual environment from requirements.txt in the /Weather_App_NY_1/.venv directory using
+    python.exe -m venv .venv 
+
+4. Install requirements using 
+    python.exe -r requirements.txt
+
+5. If installing from requirements.txt does not work, you can manually install to your python installation either on your system or virtual environment
+    pip install PyQt5 requests
+
+6. To run the application, run the following in a bash terminal with your system or virtual enviornment python
+    python.exe Weather_App_NY_2.py
